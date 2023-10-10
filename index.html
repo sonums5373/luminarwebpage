@@ -66,7 +66,9 @@
 }
 .carousel p,.carousel h1{
     animation: anim1 1s ease 0.2s 1;
+
 }
+
 @keyframes anim1{
 
      0%{transform: translateY(500px);
@@ -94,14 +96,14 @@
     rel="stylesheet">
 </head>
 <body>
-  <div class="t1 container-fluid purplebg m-0">
-    <div class="row container-xl mx-auto my-0">
+  <div class="t1 container-fluid  mt-5">
+    <div class="b row container-xl mx-auto my-0">
         <div class="col-md-6 my-0">
             <p class="fw-light">Have any question? <a href="tel:+91 8086 651 651">+91 8086 651 651</a></p>
         </div>
         <div class="col-md-6 text-md-end my-0">
             <p class="fw-light"> <a href="tel:+91 8086 651 651"><i class="fa-solid fa-phone"></i>+91 8086 651
-                    651</a> <a href="mailto:contact@luminartechnolab.com"><i class="fa-solid fa-envelope"></i>
+                    651</a> <a href="mailto:contact@luminartechnolab.com">
                     contact@luminartechnolab.com</a></p>
         </div>
     </div>
@@ -138,8 +140,6 @@
     </div>
   </div>
 </nav>
-
-
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner px-0 mt-0">
 
@@ -191,58 +191,100 @@
 </div>
 
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Get Training Quote For Free
-    </button>
+      <div class="container-xl">
+        <button type="button" class="btn btn-primary rounded-5 m-2 p3" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            Get Training Quote for free
+        </button>
+    </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- <div class="modal-header"> -->
-        </div>
-        <div class="modal-body bg-white ">
-          <h1 class="modal-title fs-5 container ms-3 mt-4  " id="exampleModalLabel ">Get Training Quote For Free </h1>
-          <div class="text-end mb-auto">
-            <button type="button" class="text-end btn-close end" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
 
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+        <div class="modal-dialog modal-dialog-centered  modal-lg pb-0">
+            <div class="modal-content pt-4 pb-0 rounded-1">
+
+                <div class="modal-body mx-auto my-0">
+                    <div class="text-end">
+                        <button type="button" class="btn-close text-end" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <form action="" class="p-5">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Get Training Quote for free</h1>
+                        <br>
+                        <input type="text" placeholder="Name" class="noborder">
+                        <hr>
+                        <input type="email" placeholder="Email" class="noborder">
+                        <hr>
+                        <input type="tele" placeholder="Phone number" class="noborder">
+                        <hr>
+                        <select class="noborder">
+                            <option selected="true" disabled="disabled">
+                                Select course interested in
+                            </option>
+                            <option>
+                                Software Testing Specialist
+                            </option>
+                            <option>
+                                PYTHON DATA SCIENCE - ML - AI - & Power BI
+                            </option>
+                            <option>
+                                MEA(R)N Stack Web Development Expert - Angular & React
+                            </option>
+                            <option>
+                                Python Django - Angular- Full Stack Web Development Expert
+                            </option>
+                            <option>
+                                Asp.net MVC with Angular - Full Stack
+                            </option>
+                            <option>
+                                Android Developer Expert Training In Kochi- Flutter
+                            </option>
+                            <option>
+                                Java Spring Full Stack Development
+                            </option>
+                        </select>
+                        <hr>
+                        <input type="text" placeholder="City" class="noborder">
+                        <hr>
+                        <textarea class="noborder" placeholder="Comments" rows="4"></textarea>
+                        <hr>
+
+                        <button type="button" class="btn btn-primary rounded-0 py-1 px-5">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+
         </div>
-      </div>
+
     </div>
-  </div><br><br>
 
 
-  <div class="container-xl mx-auto">
-    <div class="d-flex align-items-center">
-      <div class="col-lg-6">
-        <h2>Luminar Technolab Pvt Ltd</h2>
-        <h6>CIN: U80220KL2021PTC071578</h6>
-        <p>
-          Luminar Technolab is an IT Finishing School located near Infopark - Cochin, focused on providing advanced
-          level software training to Students and by helping them to get placed in IT companies. We are a team of IT
-          professionals who have experience in IT sector for more than 15 plus years. Our fresher’s career foster
-          programs are Big Data Training, Data Science Training, Data Analytics Training, Python Training, Software
-          Testing Training & Selenium Training in Cochin, Kerala are designed in such a way to match with the current
-          industry requirements. Our Vision is to provide 100% placements to students those who enroll with us for our
-          specialized courses.
+  <div class="row container-xl mx-auto">
+    <div class="col-lg-6 m-auto">
+        <h2 class="purple m3">Luminar Technolab Pvt Ltd
+        </h2>
+        <h5 class="light">CIN: U80220KL2021PTC071578
+        </h5>
+        <p class="fw-light fs-6 lh-base text-dark-emphasis">
+            Luminar Technolab is an IT Finishing School located near Infopark - Cochin, focused on providing
+            advanced level software training to Students and by helping them to get placed in IT companies. We are a
+            team of IT professionals who have experience in IT sector for more than 15 plus years. Our fresher’s
+            career foster programs are Big Data Training, Data Science Training, Data Analytics Training, Python
+            Training, Software Testing Training & Selenium Training in Cochin, Kerala are designed in such a way to
+            match with the current industry requirements. Our Vision is to provide 100% placements to students those
+            who enroll with us for our specialized courses. <br><br>
+            <button class="btn btn-primary solidbtn rounded-5 py-3 px-4">LEARN MORE</button>
         </p>
-        <button id="learn" class="btn btn-primary rounded-5">LEARN MORE</button>
-      </div>
-      <div class="col-sm-6 ">
-        <div>
-          <img class="container ms-5 mb-3 " src="./thumbsup.jpg" alt="">
-        </div>
-      </div>
     </div>
-  </div>
+    <div class="col-lg-6 text-end">
+        <img src="./thumbsup.jpg" alt="" class="w-100">
 
-
+    </div><br>
+</div><br>
   <div class="text-center ">
     <h2><span class="s1">OUR</span> <span class="s2">COURSES</span></h2> <br>
 
@@ -258,49 +300,61 @@
             <p class="card-text container">Python, Hadoop, Spark, Data Analytics, Linear Algebra, Statistics,
               Probability Concepts, Machine Learning, Deep Learning, Data Science, Artificial Intelligence, Tableau, AWS
               Cloud.</p>
+
+              <b>
+                📅 Next Batch : Jan 03rd 2022 (09:30 am - 11:30 am)<br><br>
+
+                ⏰ Duration: 6 Months, 5-6 Days a Week, 2-3 Hours/day <br><br>
+
+                🧑‍🏫 Course Fees: <a href="#">VIEW MORE</a>
+            </b>
+        </p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="card" style="display: inline-block;">
-            <img src="./python-1588143191.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Python Django- Angular-Fullstack Web Development Expert</h5>
-              <p class="card-text">Core Python, Basics of Programming, Unix Commands, Advanced Python, Django Framework,
-                REST API, Git, Angular...</p>
-              <a href="#" class="btn btn-primary">View More</a>
-            </div>
-          </div>
-        </div>
+ </div>
+<div class="container-fluid bg-light py-5 ">
+  <div class="row g-4 container-xl mx-auto">
 
-        <div class="col-4">
-          <div class="card" style="display: inline-block;">
-            <img src="./st-1588580359.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Software Testing Specialist</h5> <br><br>
-              <p class="card-text">Manual Testing, Java foundations, Mobile Testing, Selenium IDE, Selenium Web driver,
-                Selenium Advanced Web...</p>
-              <a href="#" class="btn btn-primary">View More</a>
-            </div>
-          </div>
-        </div>
+      <div class="col-lg-4">
+          <div class="hovershadow m-1 bg-white">
+              <img src="./python-1588143191.jpg" alt="" class="w-100">
+              <h6 class="purple fw-bold m-4">Python Django- Angular-Fullstack Web Developement Expert
+              </h6>
+              <p class="fw-medium lh-base text-dark-emphasis small m-4">Core Python, Basics of Programming,
+                  Unix
+                  Commands, Advanced Python, Django Framework, REST API, Git, Angul...<br>
+                  <button type="button" class="btn btn-primary rounded-0 my-5 py-2 px-3">VIEW MORE</button>
+              </p>
 
-        <div class="col-4">
-          <div class="card" style="display: inline-block;">
-            <img src="./ms-1623825586.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">MEARN Stack Web Development Expert - Angular & React</h5><br>
-              <p class="card-text">HTML, CSS, Javascript, Bootstrap, Git, Typescript, MongoDB, MySQL, Express.JS,
-                Angular, React.js and Node....</p>
-              <a href="#" class="btn btn-primary">View More</a>
-            </div>
           </div>
-        </div>
       </div>
-    </div><br><br>
+      <div class="col-lg-4 ">
+          <div class="hovershadow m-1 bg-white">
+              <img src="./st-1588580359.jpg" alt="" class="w-100">
+              <h6 class="purple fw-bold m-4">Software Testing Specialist
+              </h6>
+              <p class="fw-medium lh-base text-dark-emphasis small m-4">Manual Testing, Java foundations,
+                  Mobile
+                  Testing, Selenium IDE, Selenium Web driver, Selenium Advanced Web...<br><br>
+                  <button type="button" class="btn btn-primary rounded-0 my-5 py-2 px-3 align-bottom">VIEW
+                      MORE</button>
+              </p>
+          </div>
+      </div>
+      <div class="col-lg-4 ">
+          <div class="hovershadow m-1 bg-white">
+              <img src="./ms-1623825586.jpg" alt="" class="w-100">
+              <h6 class="purple fw-bold m-4">MEARN Stack Web Developement Expert - Angular & React
+              </h6>
+              <p class="fw-medium lh-base text-dark-emphasis small m-4">HTML, CSS, Javascript, Bootstrap, Git,
+                  Typescript, MongoDB, MySQL, Express.JS, Angular, React.js and Node....<br>
+                  <button type="button" class="btn btn-primary rounded-0 my-5 py-2 px-3">VIEW MORE</button>
+              </p>
+          </div>
+      </div>
+  </div>
+</div> <br>
 
 <div>
   <button style="background-color: rgb(143, 49, 224); border-radius: 30px;">View All Courses</button>
