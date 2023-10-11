@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-  .t1{
+  .t1 {
     background-color: rgb(84, 6, 104);
     color: white;
   }
+
   .carousel p {
-    width: 50%;
+    width: 100%;
     font-size: medium;
     text-align: left;
   }
-  .carousel img{
+
+  .carousel img {
     width: 100%;
+    height: 500px;
   }
 
   h1 {
-    font-size: 400%;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 500%;
     text-align: start;
   }
 
@@ -44,40 +45,55 @@
 
   }
 
-  .s1 {
+  .s1,
+  .m3 {
     color: rgb(204, 28, 240);
   }
 
-  .s2 {
+  .s2,
+  .m4 {
     color: blueviolet;
-  
+
   }
-  @media(max-width:600px){
-    .btn{
-        font-size: smaller;
+
+  @media(max-width:600px) {
+    .btn {
+      font-size: smaller;
+
     }
-    .carousel h1{
-        font-size:7vw;
+
+    h1 {
+      font-size: small;
     }
-    .carousel p{
-        width:100%;
-        font-size:smaller;
-    }   
-}
-.carousel p,.carousel h1{
+
+    .carousel p {
+      font-size: smaller;
+    }
+  }
+
+  .carousel p,
+  .carousel h1 {
     animation: anim1 1s ease 0.2s 1;
 
-}
+  }
 
-@keyframes anim1{
+  @keyframes anim1 {
 
-     0%{transform: translateY(500px);
-
-    }
-    100%{transform: translateY(0);
+    0% {
+      transform: translateY(500px);
 
     }
-}
+
+    50% {
+      transform: translateY(250px);
+
+    }
+
+    100% {
+      transform: translateY(0);
+
+    }
+  }
 </style>
 
 <head>
@@ -94,197 +110,189 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Fuggles&family=Kenia&family=Lilita+One&family=Londrina+Solid:wght@100&family=Pixelify+Sans&family=Press+Start+2P&family=Roboto+Condensed:wght@300&family=Sedgwick+Ave+Display&family=Ubuntu:wght@300&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-  <div class="t1 container-fluid  mt-5">
-    <div class="b row container-xl mx-auto my-0">
-        <div class="col-md-6 my-0">
-            <p class="fw-light">Have any question? <a href="tel:+91 8086 651 651">+91 8086 651 651</a></p>
-        </div>
-        <div class="col-md-6 text-md-end my-0">
-            <p class="fw-light"> <a href="tel:+91 8086 651 651"><i class="fa-solid fa-phone"></i>+91 8086 651
-                    651</a> <a href="mailto:contact@luminartechnolab.com">
-                    contact@luminartechnolab.com</a></p>
-        </div>
-    </div>
-</div>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img src="./logo.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">COURSES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">OUR PLACEMENTS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">GALLERY</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">CONTACT</a>
-        </li>
-      </ul>
+<body>
+  <div class="t1 container-fluid  p-2">
+    <div class="b row container-xl mx-auto my-0">
+      <div class="col-md-6 my-0">
+        <p class="fw-light">Have any question? <a href="tel:+91 8086 651 651">+91 8086 651 651</a></p>
+      </div>
+      <div class="col-md-6 text-md-end my-0">
+        <p class="fw-light"> <a href="tel:+91 8086 651 651"><i class="fa-solid fa-phone"></i>+91 8086 651
+            651</a> <a href="mailto:contact@luminartechnolab.com">
+            contact@luminartechnolab.com</a></p>
+      </div>
     </div>
   </div>
-</nav>
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div class="carousel-inner px-0 mt-0">
+
+  <nav class="sticky-top navbar navbar-expand-lg" style="background-color:rgb(255, 255, 255);">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">COURSES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">OUR PLACEMENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner px-0 mt-0">
 
       <div class="carousel-item active ps-0">
-          <img src="./WhatsApp Image 2023-10-05 at 16.48.12_137a1709.jpg" class="d-block text-end" alt="...">
-          <div class="carousel-caption d-block mt-0 text-start">
-              <h1>Kerala's No.1 IT Finishing School
-                  <br>
-                  100% Placement Assistance
-              </h1>
-              <br><br>
-              <p>We LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like
-                  Big Data, Hadoop, Spark,Data Scince, Machine Learning, Deep Learning and AI.
-                  <br><br><br>
-                  <button class="btn btn-primary rounded-5 py-3 px-4">VIEW COURSES</button>
-              </p>
-          </div>
+        <img src="./WhatsApp Image 2023-10-05 at 16.48.12_137a1709.jpg" class="d-block text-end" alt="...">
+        <div class="carousel-caption d-block mt-0 text-start">
+          <h1>Kerala's No.1 IT Finishing School
+            <br>
+            100% Placement Assistance
+          </h1>
+          <br><br>
+          <p>We LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like
+            Big Data, Hadoop, Spark,Data Scince, Machine Learning, Deep Learning and AI.
+            <br><br><br>
+            <button class="btn btn-primary rounded-5 py-3 px-4">VIEW COURSES</button>
+          </p>
+        </div>
       </div>
 
       <div class="carousel-item">
-          <img src="./WhatsApp Image 2023-10-05 at 16.48.12_90331f5c - Copy.jpg" class="d-block text-end " alt="...">
-          <div class="carousel-caption d-block mt-0 text-start">
-              <h1>Data Science, ML & AI
-                  <br>
-                  Big Data - Hadoop & Spark
-                  <br>
-                  Python Data Science
-              </h1>
-              <br><br>
-              <p>We LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like
-                  Big Data, Hadoop, Spark,Data Scince, Machine Learning, Deep Learning and AI.
-                  <br><br><br>
-                  <button class="btn btn-primary rounded-5 py-3 px-4">VIEW COURSES</button>
-              </p>
-          </div>
-      </div>
-  </div>
-  </div>
-
-  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-  </button>
-
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-
-      <div class="container-xl">
-        <button type="button" class="btn btn-primary rounded-5 m-2 p3" data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop">
-            Get Training Quote for free
-        </button>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-
-        <div class="modal-dialog modal-dialog-centered  modal-lg pb-0">
-            <div class="modal-content pt-4 pb-0 rounded-1">
-
-                <div class="modal-body mx-auto my-0">
-                    <div class="text-end">
-                        <button type="button" class="btn-close text-end" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-
-                    <form action="" class="p-5">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Get Training Quote for free</h1>
-                        <br>
-                        <input type="text" placeholder="Name" class="noborder">
-                        <hr>
-                        <input type="email" placeholder="Email" class="noborder">
-                        <hr>
-                        <input type="tele" placeholder="Phone number" class="noborder">
-                        <hr>
-                        <select class="noborder">
-                            <option selected="true" disabled="disabled">
-                                Select course interested in
-                            </option>
-                            <option>
-                                Software Testing Specialist
-                            </option>
-                            <option>
-                                PYTHON DATA SCIENCE - ML - AI - & Power BI
-                            </option>
-                            <option>
-                                MEA(R)N Stack Web Development Expert - Angular & React
-                            </option>
-                            <option>
-                                Python Django - Angular- Full Stack Web Development Expert
-                            </option>
-                            <option>
-                                Asp.net MVC with Angular - Full Stack
-                            </option>
-                            <option>
-                                Android Developer Expert Training In Kochi- Flutter
-                            </option>
-                            <option>
-                                Java Spring Full Stack Development
-                            </option>
-                        </select>
-                        <hr>
-                        <input type="text" placeholder="City" class="noborder">
-                        <hr>
-                        <textarea class="noborder" placeholder="Comments" rows="4"></textarea>
-                        <hr>
-
-                        <button type="button" class="btn btn-primary rounded-0 py-1 px-5">Submit</button>
-
-                    </form>
-                </div>
-            </div>
-
+        <img src="./WhatsApp Image 2023-10-05 at 16.48.12_90331f5c - Copy.jpg" class="d-block text-end " alt="...">
+        <div class="carousel-caption d-block mt-0 text-start">
+          <h1>Data Science, ML & AI
+            <br>
+            Big Data - Hadoop & Spark
+            <br>
+            Python Data Science
+          </h1>
+          <br><br>
+          <p>We LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like
+            Big Data, Hadoop, Spark,Data Scince, Machine Learning, Deep Learning and AI.
+            <br><br><br>
+            <button class="btn btn-primary rounded-5 py-3 px-4">VIEW COURSES</button>
+          </p>
         </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-xl">
+    <button type="button" class="btn btn-primary rounded-5 m-2 p3" data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop">
+      Get Training Quote for free
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered  modal-lg pb-0">
+      <div class="modal-content pt-4 pb-0 rounded-1">
+
+        <div class="modal-body mx-auto my-0">
+          <div class="text-end">
+            <button type="button" class="btn-close text-end" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <form action="" class="p-5">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Get Training Quote for free</h1>
+            <br>
+            <input type="text" placeholder="Name" class="noborder">
+            <hr>
+            <input type="email" placeholder="Email" class="noborder">
+            <hr>
+            <input type="tele" placeholder="Phone number" class="noborder">
+            <hr>
+            <select class="noborder">
+              <option selected="true" disabled="disabled">
+                Select course interested in
+              </option>
+              <option>
+                Software Testing Specialist
+              </option>
+              <option>
+                PYTHON DATA SCIENCE - ML - AI - & Power BI
+              </option>
+              <option>
+                MEA(R)N Stack Web Development Expert - Angular & React
+              </option>
+              <option>
+                Python Django - Angular- Full Stack Web Development Expert
+              </option>
+              <option>
+                Asp.net MVC with Angular - Full Stack
+              </option>
+              <option>
+                Android Developer Expert Training In Kochi- Flutter
+              </option>
+              <option>
+                Java Spring Full Stack Development
+              </option>
+            </select>
+            <hr>
+            <input type="text" placeholder="City" class="noborder">
+            <hr>
+            <textarea class="noborder" placeholder="Comments" rows="4"></textarea>
+            <hr>
+
+            <button type="button" class="btn btn-primary rounded-0 py-1 px-5">Submit</button>
+
+          </form>
+        </div>
+      </div>
 
     </div>
+
+  </div><br><br>
 
 
   <div class="row container-xl mx-auto">
     <div class="col-lg-6 m-auto">
-        <h2 class="purple m3">Luminar Technolab Pvt Ltd
-        </h2>
-        <h5 class="light">CIN: U80220KL2021PTC071578
-        </h5>
-        <p class="fw-light fs-6 lh-base text-dark-emphasis">
-            Luminar Technolab is an IT Finishing School located near Infopark - Cochin, focused on providing
-            advanced level software training to Students and by helping them to get placed in IT companies. We are a
-            team of IT professionals who have experience in IT sector for more than 15 plus years. Our fresher’s
-            career foster programs are Big Data Training, Data Science Training, Data Analytics Training, Python
-            Training, Software Testing Training & Selenium Training in Cochin, Kerala are designed in such a way to
-            match with the current industry requirements. Our Vision is to provide 100% placements to students those
-            who enroll with us for our specialized courses. <br><br>
-            <button class="btn btn-primary solidbtn rounded-5 py-3 px-4">LEARN MORE</button>
-        </p>
+      <h2 class=" m3">Luminar Technolab Pvt Ltd
+      </h2>
+      <h5 class="m4">CIN: U80220KL2021PTC071578
+      </h5>
+      <p class="fw-light fs-6 lh-base text-dark-emphasis">
+        Luminar Technolab is an IT Finishing School located near Infopark - Cochin, focused on providing
+        advanced level software training to Students and by helping them to get placed in IT companies. We are a
+        team of IT professionals who have experience in IT sector for more than 15 plus years. Our fresher’s
+        career foster programs are Big Data Training, Data Science Training, Data Analytics Training, Python
+        Training, Software Testing Training & Selenium Training in Cochin, Kerala are designed in such a way to
+        match with the current industry requirements. Our Vision is to provide 100% placements to students those
+        who enroll with us for our specialized courses. <br><br>
+        <button class="btn btn-primary solidbtn rounded-5 py-3 px-4">LEARN MORE</button>
+      </p>
     </div>
     <div class="col-lg-6 text-end">
-        <img src="./thumbsup.jpg" alt="" class="w-100">
+      <img src="./thumbsup.jpg" alt="" class="w-100">
 
     </div><br>
-</div><br>
+  </div><br>
   <div class="text-center ">
     <h2><span class="s1">OUR</span> <span class="s2">COURSES</span></h2> <br>
 
@@ -301,66 +309,253 @@
               Probability Concepts, Machine Learning, Deep Learning, Data Science, Artificial Intelligence, Tableau, AWS
               Cloud.</p>
 
-              <b>
-                📅 Next Batch : Jan 03rd 2022 (09:30 am - 11:30 am)<br><br>
+            <b>
+              📅 Next Batch : Jan 03rd 2022 (09:30 am - 11:30 am)<br><br>
 
-                ⏰ Duration: 6 Months, 5-6 Days a Week, 2-3 Hours/day <br><br>
+              ⏰ Duration: 6 Months, 5-6 Days a Week, 2-3 Hours/day <br><br>
 
-                🧑‍🏫 Course Fees: <a href="#">VIEW MORE</a>
+              🧑‍🏫 Course Fees: <a href="#">VIEW MORE</a>
             </b>
-        </p>
+            </p>
           </div>
         </div>
       </div>
- </div>
-<div class="container-fluid bg-light py-5 ">
-  <div class="row g-4 container-xl mx-auto">
+    </div>
+    <div class="container-fluid bg-light py-5 ">
+      <div class="row g-4 container-xl mx-auto">
 
-      <div class="col-lg-4">
+        <div class="col-lg-4">
           <div class="hovershadow m-1 bg-white">
-              <img src="./python-1588143191.jpg" alt="" class="w-100">
-              <h6 class="purple fw-bold m-4">Python Django- Angular-Fullstack Web Developement Expert
-              </h6>
-              <p class="fw-medium lh-base text-dark-emphasis small m-4">Core Python, Basics of Programming,
-                  Unix
-                  Commands, Advanced Python, Django Framework, REST API, Git, Angul...<br>
-                  <button type="button" class="btn btn-primary rounded-0 my-5 py-2 px-3">VIEW MORE</button>
-              </p>
+            <img src="./python-1588143191.jpg" alt="" class="w-100">
+            <h6 class="purple fw-bold m-4" style="color: rgb(176, 29, 235);">Python Django- Angular-Fullstack Web
+              Developement Expert
+            </h6>
+            <p class="fw-medium lh-base text-dark-emphasis small m-4">Core Python, Basics of Programming,
+              Unix
+              Commands, Advanced Python, Django Framework, REST API, Git, Angul...<br>
+              <button type="button" class="btn btn-primary rounded-0 my-5 py-2 px-3">VIEW MORE</button>
+            </p>
 
           </div>
-      </div>
-      <div class="col-lg-4 ">
+        </div>
+        <div class="col-lg-4 ">
           <div class="hovershadow m-1 bg-white">
-              <img src="./st-1588580359.jpg" alt="" class="w-100">
-              <h6 class="purple fw-bold m-4">Software Testing Specialist
-              </h6>
-              <p class="fw-medium lh-base text-dark-emphasis small m-4">Manual Testing, Java foundations,
-                  Mobile
-                  Testing, Selenium IDE, Selenium Web driver, Selenium Advanced Web...<br><br>
-                  <button type="button" class="btn btn-primary rounded-0 my-5 py-2 px-3 align-bottom">VIEW
-                      MORE</button>
-              </p>
+            <img src="./st-1588580359.jpg" alt="" class="w-100">
+            <h6 class="purple fw-bold m-4 " style="color: rgb(176, 29, 235);">Software Testing Specialist
+            </h6>
+            <p class="fw-medium lh-base text-dark-emphasis small m-4">Manual Testing, Java foundations,
+              Mobile
+              Testing, Selenium IDE, Selenium Web driver, Selenium Advanced Web...<br><br>
+              <button type="button" class="btn btn-primary rounded-0 my-5 py-2 px-3 align-bottom">VIEW
+                MORE</button>
+            </p>
           </div>
-      </div>
-      <div class="col-lg-4 ">
+        </div>
+        <div class="col-lg-4 ">
           <div class="hovershadow m-1 bg-white">
-              <img src="./ms-1623825586.jpg" alt="" class="w-100">
-              <h6 class="purple fw-bold m-4">MEARN Stack Web Developement Expert - Angular & React
-              </h6>
-              <p class="fw-medium lh-base text-dark-emphasis small m-4">HTML, CSS, Javascript, Bootstrap, Git,
-                  Typescript, MongoDB, MySQL, Express.JS, Angular, React.js and Node....<br>
-                  <button type="button" class="btn btn-primary rounded-0 my-5 py-2 px-3">VIEW MORE</button>
-              </p>
+            <img src="./ms-1623825586.jpg" alt="" class="w-100">
+            <h6 class="purple fw-bold m-4" style="color: rgb(176, 29, 235);">MEARN Stack Web Developement Expert -
+              Angular & React
+            </h6>
+            <p class="fw-medium lh-base text-dark-emphasis small m-4">HTML, CSS, Javascript, Bootstrap, Git,
+              Typescript, MongoDB, MySQL, Express.JS, Angular, React.js and Node....<br>
+              <button type="button" class="btn btn-primary rounded-0 my-5 py-2 px-3">VIEW MORE</button>
+            </p>
           </div>
+        </div>
       </div>
-  </div>
-</div> <br>
+    </div> <br>
 
-<div>
-  <button style="background-color: rgb(143, 49, 224); border-radius: 30px;">View All Courses</button>
-</div>
+    <div>
+      <button style="background-color: rgb(143, 49, 224); border-radius: 30px;">View All Courses</button>
+    </div><br><br>
 
 
-    </body>
+
+    <div class="container w-75 xm">
+      <div class="row">
+        <div class="col-lg-5">
+          <img src="./grid6.png " alt="" class="u6">
+          <h1 class="rr  mt-2  text-center ">Testimonials </h1>
+        </div>
+
+        <div class="col-lg-7 bb">
+          <div id="carouselExampleAutoplaying " class="carousel slide  " data-bs-ride="carousel">
+            <div class="carousel-inner ">
+              <div class="carousel-item active " data-bs-interval="2000">
+                <p>
+                  Quality Analyst in LogicPlum
+                  I think I must review the data science course offered by Luminar technolabs, kakkanadu. I came to know
+                  about Luminar from one of my friends and I joined the couse 6 months before. The course touches almost
+                  all areas of data science practically. As completing each areas or fundamentals, the instructors make
+                  sure that we learned the concepts and able to reproduce the same by guiding us to do hands on projects
+                  on it.project reviews are conducting periodically till the final demo. All these really helps us to
+                  improve our knowledge on particular areas. I really appreciate their efforts to schedule online
+                  sessions during COVID-19 circumstances. Guiding candidates for interviews/machine tests by talented
+                  and experienced instructors specifically. Thank you luminar for the course offered.. And I must say
+                  that you may add on to the curriculum for the betterment of the course.
+
+
+
+                  A great place in Kochi to learn MEAN Stack Web Development. The classes were good, informative and 95%
+                  practical. They also provide good placement support. Got offer letter from 3 companies through their
+                  placement support right after the training.
+
+
+                  .</p>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <p> Luminar Technolab helped me in creating self confidence for attending interview successfully and for
+                  securing a job by providing all technical/practical training even through online classes during this
+                  lockdown period.
+                  The homely attittude of all the staff members was impressing and I will be greatful to luminar.
+                  I am proud to be a member of this esteemed luminar family
+                  .</p>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <p> A great place in Kochi to learn MEAN Stack Web Development. The classes were good, informative and
+                  95% practical. They also provide good placement support. Got offer letter from 3 companies through
+                  their placement support right after the training.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div> <br><br><br>
+    <div class="footer1 text-white bb" style="background-color: rgb(14,3,25);">
+      <div class="row">
+        <div class="col-lg-3 col-md-4  col-sm-6">
+          <img src="./footer.png" class="w-100 mt-5 ms-3 cc" alt="">
+
+          <a href="" class="log"> <i class="fa-brands fa-facebook fs-3 mt-3 ms-5 " style="color:white;"></i></a>
+          &nbsp <a href="" class="log"><i class="fa-solid fa-rss fa-2x p-2 fs-3" style="color:white;"></i></a>
+          &nbsp <a href="" class="log"><i class="fa-brands fa-google-plus-g fs-3" style="color:white;"></i></a>
+          &nbsp <a href="" class="log"><i class="fa-brands fa-twitter fs-3" style="color:white;"></i></a>
+          &nbsp <a href="" class="log"><i class="fa-brands fa-instagram fs-3" style="color:white;"></i></a>
+
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 ">
+          <h3 class="text-white mt-5 ms-5 ">TRAINING COURSES</h3>
+          <ul class="df mt-5 ms-3">
+            <li>
+              <a href="" class="log">Data Science Training </a>
+            </li>
+            <li>
+              <a href="" class="log">Python Training</a>
+            </li>
+            <li>
+              <a href="" class="log">MEARN Stack Training</a>
+            </li>
+            <li>
+              <a href="" class="pp">Artificial Intelligence Training</a>
+            </li>
+            <li>
+              <a href="" class="log">Software Testing Training</a>
+            </li>
+
+
+            <li>
+              <a href="" class="log">Digital Marketing Training</a>
+            </li>
+            <li>
+              <a href="" class="log">Power BI Training</a>
+            </li>
+            <li>
+              <a href="" class="log">Tableau Training</a>
+            </li>
+            <li>
+              <a href="" class="log">Php Training</a>
+            </li>
+            <li>
+              <a href="" class="log">Asp.net Training </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h3 class="text-white mt-5 ms-5 ">USEFUL LINKS</h3>
+          <ul class="ef mt-5 ms-3 ">
+            <li>
+              <a href="" class="log">
+                Teachers and staffs
+              </a>
+            </li>
+            <li>
+              <a href="" class="log">
+                Our courses
+              </a>
+            </li>
+            <li>
+              <a href="" class="log"> Courses Catagories</a>
+            </li>
+            <li>
+              <a href="" class="log">Certification & Affiliation</a>
+            </li>
+            <li>
+
+              <a href="" class="log">Refund and Cancellation Policy</a>
+            </li>
+
+
+            <li>
+              <a href="" class="log">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="" class="log">Privacy Policy</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h3 class="text-white mt-5 ms-5">GET IN TOUCH</h3>
+          <ul class="kl mt-5 ms-3">
+            <li>
+              <a href="" class="log"> <i class="fa-solid fa-phone" style="color: white;"></i> &nbsp +91 8086 651 651</a>
+            </li>
+            <li>
+              <a href="" class="log"> <i class="fa-solid fa-phone c" style="color: white;"></i>&nbsp +91 484 405
+                8886</a>
+            </li>
+            <li>
+              <a href="" class="log"><i class="fa-regular fa-envelope" style="color: white;"></i>&nbsp
+                contact@luminartechnolab.com</a>
+            </li>
+            <li>
+              <a href="" class="log"><i class="fa-solid fa-globe" style="color: white;"></i>&nbsp
+                www.luminartechnolab.com</a>
+            </li>
+            <li>
+              <a href="" class="log "><i class="fa-solid fa-location-dot" style="color: white;"></i>&nbsp 16/3262, First
+                floor,
+                Vallamattam Estate Seaport Airport Road, <br>
+                CSEZ P O Kakkanad Ernakulam KL 682037 IN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="qt mt-4">
+      <div class="row">
+        <div class="col-md-6 sm-12 bg-light ms-auto ">
+          <p>Copyright © Luminar Technolab 2020 | Developed by <span class="g4">Deepnetsoft</span></p>
+        </div>
+        <div class="col-md-6 sm-12 bg-light text-md-end">
+          <p class="g8">Privacy Policy , Terms & Conditions</p>
+
+        </div>
+      </div>
+
+    </div>
+
+
+</body>
 
 </html>
